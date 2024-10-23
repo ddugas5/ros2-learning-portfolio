@@ -1,0 +1,3 @@
+[console_scripts]
+basic_publisher = basic_package.basic_publisher:main
+
