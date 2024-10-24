@@ -20,7 +20,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'basic_publisher = basic_package.basic_publisher:main'
+            'basic_publisher = basic_package.basic_publisher:main',
+            'basic_subscriber = basic_package.basic_subscriber:main',
+            'basic_service = basic_package.basic_service:main',
+            'basic_client = basic_package.basic_client:main',
+            'fibonacci_action_server = basic_package.fibonacci_action_server:main',
+            'fibonacci_action_client = basic_package.fibonacci_action_client:main',
         ],
     },
 )

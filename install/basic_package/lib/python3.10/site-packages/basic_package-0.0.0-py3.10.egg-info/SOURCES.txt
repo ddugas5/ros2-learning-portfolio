@@ -10,7 +10,12 @@ setup.py
 ../../build/basic_package/basic_package.egg-info/top_level.txt
 ../../build/basic_package/basic_package.egg-info/zip-safe
 basic_package/__init__.py
+basic_package/basic_client.py
 basic_package/basic_publisher.py
+basic_package/basic_service.py
+basic_package/basic_subscriber.py
+basic_package/fibonacci_action_client.py
+basic_package/fibonacci_action_server.py
 resource/basic_package
 test/test_copyright.py
 test/test_flake8.py
