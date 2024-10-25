@@ -1,0 +1,3 @@
+[console_scripts]
+hello_world = parameters_package.hello_world:main
+
