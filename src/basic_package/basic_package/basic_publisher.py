@@ -14,7 +14,7 @@ class MinimalPublisher(Node):
         msg = String()
         msg.data = 'Hello, ROS2'
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+        #self.get_logger().info('Publishing: "%s"' % msg.data)
 
 def main(args=None):
     rclpy.init(args=args)

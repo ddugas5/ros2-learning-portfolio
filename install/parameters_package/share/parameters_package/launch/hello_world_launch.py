@@ -17,5 +17,24 @@ def generate_launch_description():
             executable = 'hello_world',
             name = 'hello_world_publisher',
             parameters=[config]
+        ),
+
+        Node(
+            package = 'basic_package',
+            executable = 'basic_subscriber',
+            name = 'listener_node',
+            parameters = [config]
+        ),
+        Node(
+            package = 'parameters_package',
+            executable = 'square_client',
+            name = 'square_one_int_client',
+            parameters=[config]
+        ),
+        Node(
+            package='parameters_package',
+            executable = 'square_service',
+            name='square_one_int_service',
+            parameters=[config]
         )
     ])

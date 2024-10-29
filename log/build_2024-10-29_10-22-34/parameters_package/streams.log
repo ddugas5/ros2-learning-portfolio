@@ -1,0 +1,30 @@
+[0.519s] Invoking command in '/home/davey/ros2-learning-portfolio/src/parameters_package': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/parameters_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/parameters_package build --build-base /home/davey/ros2-learning-portfolio/build/parameters_package/build install --record /home/davey/ros2-learning-portfolio/build/parameters_package/install.log --single-version-externally-managed install_data
+[0.650s] running egg_info
+[0.650s] writing ../../build/parameters_package/parameters_package.egg-info/PKG-INFO
+[0.650s] writing dependency_links to ../../build/parameters_package/parameters_package.egg-info/dependency_links.txt
+[0.650s] writing entry points to ../../build/parameters_package/parameters_package.egg-info/entry_points.txt
+[0.650s] writing requirements to ../../build/parameters_package/parameters_package.egg-info/requires.txt
+[0.651s] writing top-level names to ../../build/parameters_package/parameters_package.egg-info/top_level.txt
+[0.651s] reading manifest file '../../build/parameters_package/parameters_package.egg-info/SOURCES.txt'
+[0.651s] adding license file 'LICENSE'
+[0.652s] writing manifest file '../../build/parameters_package/parameters_package.egg-info/SOURCES.txt'
+[0.652s] running build
+[0.652s] running build_py
+[0.652s] copying parameters_package/square_client.py -> /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package
+[0.652s] copying parameters_package/square_service.py -> /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package
+[0.652s] running install
+[0.652s] running install_lib
+[0.653s] copying /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package/square_client.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package
+[0.653s] copying /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package/square_service.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package
+[0.653s] byte-compiling /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package/square_client.py to square_client.cpython-310.pyc
+[0.653s] byte-compiling /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package/square_service.py to square_service.cpython-310.pyc
+[0.653s] running install_data
+[0.654s] copying launch/hello_world_launch.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/launch
+[0.654s] copying config/params.yaml -> /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/config
+[0.654s] running install_egg_info
+[0.655s] removing '/home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package-0.0.0-py3.10.egg-info' (and everything under it)
+[0.655s] Copying ../../build/parameters_package/parameters_package.egg-info to /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package-0.0.0-py3.10.egg-info
+[0.656s] running install_scripts
+[0.705s] Installing hello_world script to /home/davey/ros2-learning-portfolio/install/parameters_package/lib/parameters_package
+[0.705s] writing list of installed files to '/home/davey/ros2-learning-portfolio/build/parameters_package/install.log'
+[0.718s] Invoked command in '/home/davey/ros2-learning-portfolio/src/parameters_package' returned '0': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/parameters_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/parameters_package build --build-base /home/davey/ros2-learning-portfolio/build/parameters_package/build install --record /home/davey/ros2-learning-portfolio/build/parameters_package/install.log --single-version-externally-managed install_data

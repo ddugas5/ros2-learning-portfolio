@@ -14,7 +14,9 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name), ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
-        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),        
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
+        (os.path.join('share', package_name, 'srv'), glob('srv/*.srv')),  # Correct way to reference srv files
+      
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,7 +27,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'hello_world = parameters_package.hello_world:main'
+            'hello_world = parameters_package.hello_world:main',
+            'square_client = parameters_package.square_client:main',
+            'square_service = parameters_package.square_service:main'
         ],
     },
 )
