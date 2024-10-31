@@ -12,6 +12,7 @@ setup.py
 config/params.yaml
 launch/hello_world_launch.py
 parameters_package/__init__.py
+parameters_package/alternating_publisher.py
 parameters_package/hello_world.py
 parameters_package/square_client.py
 parameters_package/square_service.py

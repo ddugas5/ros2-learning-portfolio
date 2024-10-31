@@ -1,0 +1,27 @@
+[0.571s] Invoking command in '/home/davey/ros2-learning-portfolio/src/basic_package': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/basic_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/basic_package build --build-base /home/davey/ros2-learning-portfolio/build/basic_package/build install --record /home/davey/ros2-learning-portfolio/build/basic_package/install.log --single-version-externally-managed install_data
+[0.709s] running egg_info
+[0.709s] writing ../../build/basic_package/basic_package.egg-info/PKG-INFO
+[0.710s] writing dependency_links to ../../build/basic_package/basic_package.egg-info/dependency_links.txt
+[0.710s] writing entry points to ../../build/basic_package/basic_package.egg-info/entry_points.txt
+[0.710s] writing requirements to ../../build/basic_package/basic_package.egg-info/requires.txt
+[0.710s] writing top-level names to ../../build/basic_package/basic_package.egg-info/top_level.txt
+[0.711s] reading manifest file '../../build/basic_package/basic_package.egg-info/SOURCES.txt'
+[0.711s] adding license file 'LICENSE'
+[0.711s] writing manifest file '../../build/basic_package/basic_package.egg-info/SOURCES.txt'
+[0.712s] running build
+[0.712s] running build_py
+[0.712s] running install
+[0.712s] running install_lib
+[0.713s] running install_data
+[0.713s] running install_egg_info
+[0.714s] removing '/home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages/basic_package-0.0.0-py3.10.egg-info' (and everything under it)
+[0.714s] Copying ../../build/basic_package/basic_package.egg-info to /home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages/basic_package-0.0.0-py3.10.egg-info
+[0.714s] running install_scripts
+[0.776s] Installing basic_client script to /home/davey/ros2-learning-portfolio/install/basic_package/lib/basic_package
+[0.776s] Installing basic_publisher script to /home/davey/ros2-learning-portfolio/install/basic_package/lib/basic_package
+[0.776s] Installing basic_service script to /home/davey/ros2-learning-portfolio/install/basic_package/lib/basic_package
+[0.776s] Installing basic_subscriber script to /home/davey/ros2-learning-portfolio/install/basic_package/lib/basic_package
+[0.776s] Installing fibonacci_action_client script to /home/davey/ros2-learning-portfolio/install/basic_package/lib/basic_package
+[0.777s] Installing fibonacci_action_server script to /home/davey/ros2-learning-portfolio/install/basic_package/lib/basic_package
+[0.777s] writing list of installed files to '/home/davey/ros2-learning-portfolio/build/basic_package/install.log'
+[0.793s] Invoked command in '/home/davey/ros2-learning-portfolio/src/basic_package' returned '0': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/basic_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/basic_package build --build-base /home/davey/ros2-learning-portfolio/build/basic_package/build install --record /home/davey/ros2-learning-portfolio/build/basic_package/install.log --single-version-externally-managed install_data

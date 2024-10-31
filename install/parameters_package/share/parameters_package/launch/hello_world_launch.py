@@ -27,14 +27,8 @@ def generate_launch_description():
         ),
         Node(
             package = 'parameters_package',
-            executable = 'square_client',
-            name = 'square_one_int_client',
+            executable = 'alternating_publisher',
+            name = 'alternating_publisher',
             parameters=[config]
         ),
-        Node(
-            package='parameters_package',
-            executable = 'square_service',
-            name='square_one_int_service',
-            parameters=[config]
-        )
     ])

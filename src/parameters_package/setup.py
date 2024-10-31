@@ -29,7 +29,8 @@ setup(
         'console_scripts': [
             'hello_world = parameters_package.hello_world:main',
             'square_client = parameters_package.square_client:main',
-            'square_service = parameters_package.square_service:main'
+            'square_service = parameters_package.square_service:main',
+            'alternating_publisher = parameters_package.alternating_publisher:main',
         ],
     },
 )

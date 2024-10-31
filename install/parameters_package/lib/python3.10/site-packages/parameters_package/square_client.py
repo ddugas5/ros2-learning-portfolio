@@ -1,37 +1,29 @@
-import sys
 import rclpy
 from rclpy.node import Node
+from parameters_package.srv import SquareOneInt
 
-class SquareOneIntClient(Node):
+class SquareClient(Node):
     def __init__(self):
-        super().__init__('square_one_int_client')
-        self.cli = self.create_client(SquareOneIntClient, 'square_one_int_client')
+        super().__init__('square_client')
+        self.client = self.create_client(SquareOneInt, 'square_one_int_service')
+        while not self.client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Service not available, waiting...')
 
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('Service not available, waiting again...')
-        
-        self.req = SquareOneIntClient.Request()
+        self.request = SquareOneInt.Request()
 
-    def send_request(self, a, b):
-        self.req.a = a
-        self.future = self.cli.call_async(self.req)
+    def send_request(self, a):
+        self.request.a = a
+        self.future = self.client.call_async(self.request)
+        rclpy.spin_until_future_complete(self, self.future)
+        if self.future.result() is not None:
+            self.get_logger().info(f'Result: {self.future.result().total}')
+        else:
+            self.get_logger().info('Service call failed.')
 
 def main(args=None):
     rclpy.init(args=args)
-
-    client = SquareOneIntClient()
-    client.send_request(int(sys.argv[1]))
-
-    while rclpy.ok():
-        rclpy.spin_once(client)
-        if client.future.done():
-            try:
-                response = client.future.result()
-            except Exception as e:
-                client.get_logger().info(f'Service call failed: {e}')
-            else:
-                client.get_logger().info(f'Result: {response.total}')
-            break
+    client = SquareClient()
+    client.send_request(3)  # Change this number as needed
     rclpy.shutdown()
 
 if __name__ == '__main__':
