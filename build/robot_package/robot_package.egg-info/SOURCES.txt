@@ -9,6 +9,7 @@ setup.py
 ../../build/robot_package/robot_package.egg-info/requires.txt
 ../../build/robot_package/robot_package.egg-info/top_level.txt
 ../../build/robot_package/robot_package.egg-info/zip-safe
+launch/two_wheel_robot.launch.py
 launch/urdf.launch.py
 resource/robot_package
 robot_package/__init__.py
