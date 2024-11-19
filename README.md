@@ -21,4 +21,4 @@ This is a portfolio of my ROS2 projects as I learn
 * Explore SLAM, Computer Vision, and Navigation
 * 3 DOF Robot Arm
 * 6 DOF Robot Arm
-* A
+* More to come!
