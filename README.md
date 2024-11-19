@@ -1,4 +1,4 @@
-# ros2-learning-portfolio
+# ROS2 Learning Portfolio
 This is a portfolio of my ROS2 projects as I learn  
   
 ## Topics Covered So Far..  
