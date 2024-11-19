@@ -9,5 +9,16 @@ This is a portfolio of my ROS2 projects as I learn
 * Parameters  
 * Configuring Parameters Dynamically  
 * Launch Files  
-* URDFs  
-* 
+* URDFs
+* Running Simualtions Using Gazebo
+
+## Simulated Robots  
+* Two Wheeled Robot
+* Three Wheeled Robot
+  
+## Future Ideas  
+* Add Camera and LiDAR to Three Wheeled Robot
+* Explore SLAM, Computer Vision, and Navigation
+* 3 DOF Robot Arm
+* 6 DOF Robot Arm
+* A
