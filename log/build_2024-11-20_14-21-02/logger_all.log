@@ -1,0 +1,227 @@
+[0.086s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.086s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f53a7d71630>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f53a7d707f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f53a7d707f0>>)
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.178s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/davey/ros2-learning-portfolio'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_package) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/basic_package' with type 'ros.ament_python' and name 'basic_package'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters_package) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parameters_package' with type 'ros.ament_python' and name 'parameters_package'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_package) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_package' with type 'ros.ament_python' and name 'robot_package'
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.204s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/davey/ros2-learning-portfolio/install
+[0.205s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 362 installed packages in /opt/ros/humble
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'cmake_target' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'basic_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.228s] DEBUG:colcon.colcon_core.verb:Building package 'basic_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/davey/ros2-learning-portfolio/build/basic_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/davey/ros2-learning-portfolio/install/basic_package', 'merge_install': False, 'path': '/home/davey/ros2-learning-portfolio/src/basic_package', 'symlink_install': False, 'test_result_base': None}
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'cmake_target' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'parameters_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.228s] DEBUG:colcon.colcon_core.verb:Building package 'parameters_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/davey/ros2-learning-portfolio/build/parameters_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/davey/ros2-learning-portfolio/install/parameters_package', 'merge_install': False, 'path': '/home/davey/ros2-learning-portfolio/src/parameters_package', 'symlink_install': False, 'test_result_base': None}
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'cmake_target' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'robot_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.228s] DEBUG:colcon.colcon_core.verb:Building package 'robot_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/davey/ros2-learning-portfolio/build/robot_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/davey/ros2-learning-portfolio/install/robot_package', 'merge_install': False, 'path': '/home/davey/ros2-learning-portfolio/src/robot_package', 'symlink_install': False, 'test_result_base': None}
+[0.228s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.229s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/davey/ros2-learning-portfolio/src/basic_package' with build type 'ament_python'
+[0.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('basic_package', 'ament_prefix_path')
+[0.230s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/hook/ament_prefix_path.ps1'
+[0.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/hook/ament_prefix_path.dsv'
+[0.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/hook/ament_prefix_path.sh'
+[0.231s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.231s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.233s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/davey/ros2-learning-portfolio/src/parameters_package' with build type 'ament_python'
+[0.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('parameters_package', 'ament_prefix_path')
+[0.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/hook/ament_prefix_path.ps1'
+[0.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/hook/ament_prefix_path.dsv'
+[0.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/hook/ament_prefix_path.sh'
+[0.234s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.234s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.235s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/davey/ros2-learning-portfolio/src/robot_package' with build type 'ament_python'
+[0.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_package', 'ament_prefix_path')
+[0.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/hook/ament_prefix_path.ps1'
+[0.236s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/hook/ament_prefix_path.dsv'
+[0.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/hook/ament_prefix_path.sh'
+[0.237s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.237s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.393s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/davey/ros2-learning-portfolio/src/basic_package'
+[0.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.537s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/davey/ros2-learning-portfolio/src/parameters_package'
+[0.537s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.537s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.686s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/davey/ros2-learning-portfolio/src/robot_package'
+[0.686s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.686s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/davey/ros2-learning-portfolio/src/parameters_package': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/parameters_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/parameters_package build --build-base /home/davey/ros2-learning-portfolio/build/parameters_package/build install --record /home/davey/ros2-learning-portfolio/build/parameters_package/install.log --single-version-externally-managed install_data
+[0.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/davey/ros2-learning-portfolio/src/basic_package': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/basic_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/basic_package build --build-base /home/davey/ros2-learning-portfolio/build/basic_package/build install --record /home/davey/ros2-learning-portfolio/build/basic_package/install.log --single-version-externally-managed install_data
+[1.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/davey/ros2-learning-portfolio/src/robot_package': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/robot_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_package build --build-base /home/davey/ros2-learning-portfolio/build/robot_package/build install --record /home/davey/ros2-learning-portfolio/build/robot_package/install.log --single-version-externally-managed install_data
+[1.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/davey/ros2-learning-portfolio/src/parameters_package' returned '0': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/parameters_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/parameters_package build --build-base /home/davey/ros2-learning-portfolio/build/parameters_package/build install --record /home/davey/ros2-learning-portfolio/build/parameters_package/install.log --single-version-externally-managed install_data
+[1.174s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/parameters_package' for CMake module files
+[1.174s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/parameters_package' for CMake config files
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/parameters_package/lib'
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/parameters_package/bin'
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/parameters_package/lib/pkgconfig/parameters_package.pc'
+[1.176s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages'
+[1.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('parameters_package', 'pythonpath')
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/hook/pythonpath.ps1'
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/hook/pythonpath.dsv'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/hook/pythonpath.sh'
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/parameters_package/bin'
+[1.177s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parameters_package)
+[1.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/package.ps1'
+[1.178s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/package.dsv'
+[1.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/package.sh'
+[1.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/package.bash'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/package.zsh'
+[1.180s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/davey/ros2-learning-portfolio/install/parameters_package/share/colcon-core/packages/parameters_package)
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/robot_package' for CMake module files
+[1.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/davey/ros2-learning-portfolio/src/robot_package' returned '0': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/robot_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_package build --build-base /home/davey/ros2-learning-portfolio/build/robot_package/build install --record /home/davey/ros2-learning-portfolio/build/robot_package/install.log --single-version-externally-managed install_data
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/robot_package' for CMake config files
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/robot_package/lib'
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/robot_package/bin'
+[1.219s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/robot_package/lib/pkgconfig/robot_package.pc'
+[1.219s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages'
+[1.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_package', 'pythonpath')
+[1.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/hook/pythonpath.ps1'
+[1.219s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/hook/pythonpath.dsv'
+[1.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/hook/pythonpath.sh'
+[1.220s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/robot_package/bin'
+[1.220s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_package)
+[1.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/package.ps1'
+[1.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/package.dsv'
+[1.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/package.sh'
+[1.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/package.bash'
+[1.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/package.zsh'
+[1.222s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/davey/ros2-learning-portfolio/install/robot_package/share/colcon-core/packages/robot_package)
+[1.279s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/basic_package' for CMake module files
+[1.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/davey/ros2-learning-portfolio/src/basic_package' returned '0': PYTHONPATH=/home/davey/ros2-learning-portfolio/build/basic_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/basic_package build --build-base /home/davey/ros2-learning-portfolio/build/basic_package/build install --record /home/davey/ros2-learning-portfolio/build/basic_package/install.log --single-version-externally-managed install_data
+[1.279s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/basic_package' for CMake config files
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/basic_package/lib'
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/basic_package/bin'
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/basic_package/lib/pkgconfig/basic_package.pc'
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages'
+[1.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('basic_package', 'pythonpath')
+[1.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/hook/pythonpath.ps1'
+[1.281s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/hook/pythonpath.dsv'
+[1.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/hook/pythonpath.sh'
+[1.282s] Level 1:colcon.colcon_core.environment:checking '/home/davey/ros2-learning-portfolio/install/basic_package/bin'
+[1.282s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(basic_package)
+[1.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/package.ps1'
+[1.283s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/package.dsv'
+[1.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/package.sh'
+[1.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/package.bash'
+[1.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/davey/ros2-learning-portfolio/install/basic_package/share/basic_package/package.zsh'
+[1.284s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/davey/ros2-learning-portfolio/install/basic_package/share/colcon-core/packages/basic_package)
+[1.284s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.284s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.284s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.285s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.333s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.333s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.333s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.343s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.343s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/davey/ros2-learning-portfolio/install/local_setup.ps1'
+[1.344s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/davey/ros2-learning-portfolio/install/_local_setup_util_ps1.py'
+[1.346s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/davey/ros2-learning-portfolio/install/setup.ps1'
+[1.348s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/davey/ros2-learning-portfolio/install/local_setup.sh'
+[1.350s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/davey/ros2-learning-portfolio/install/_local_setup_util_sh.py'
+[1.351s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/davey/ros2-learning-portfolio/install/setup.sh'
+[1.355s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/davey/ros2-learning-portfolio/install/local_setup.bash'
+[1.357s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/davey/ros2-learning-portfolio/install/setup.bash'
+[1.359s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/davey/ros2-learning-portfolio/install/local_setup.zsh'
+[1.359s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/davey/ros2-learning-portfolio/install/setup.zsh'
