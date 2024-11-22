@@ -13,7 +13,7 @@ This is a portfolio of my ROS2 projects as I learn
 * Running Simualtions Using Gazebo
 
 ## Currently Working On  
-* Simulating a two wheeled robot with chassis in Gazebo
+* Simulating a three wheeled in Gazebo
   
 ## Future Ideas  
 * Add Camera and LiDAR to Three Wheeled Robot
