@@ -1,3 +1,0 @@
-[console_scripts]
-hello_world = robot_package.hello_world:main
-
