@@ -12,9 +12,8 @@ This is a portfolio of my ROS2 projects as I learn
 * URDFs
 * Running Simualtions Using Gazebo
 
-## Simulated Robots  
-* Two Wheeled Robot
-* Three Wheeled Robot
+## Currently working on  
+* Simulating a two wheeled robot with chassis in Gazebo
   
 ## Future Ideas  
 * Add Camera and LiDAR to Three Wheeled Robot
