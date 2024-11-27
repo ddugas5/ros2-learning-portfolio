@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/robot_package/robot_package.egg-info
+writing ../../build/robot_package/robot_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_package/robot_package.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_package/robot_package.egg-info/entry_points.txt
+writing requirements to ../../build/robot_package/robot_package.egg-info/requires.txt
+writing top-level names to ../../build/robot_package/robot_package.egg-info/top_level.txt
+writing manifest file '../../build/robot_package/robot_package.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot_package/robot_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/robot_package/robot_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/davey/ros2-learning-portfolio/build/robot_package/build
+creating /home/davey/ros2-learning-portfolio/build/robot_package/build/lib
+creating /home/davey/ros2-learning-portfolio/build/robot_package/build/lib/robot_package
+copying robot_package/__init__.py -> /home/davey/ros2-learning-portfolio/build/robot_package/build/lib/robot_package
+copying robot_package/hello_world.py -> /home/davey/ros2-learning-portfolio/build/robot_package/build/lib/robot_package
+running install
+running install_lib
+creating /home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages/robot_package
+copying /home/davey/ros2-learning-portfolio/build/robot_package/build/lib/robot_package/__init__.py -> /home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages/robot_package
+copying /home/davey/ros2-learning-portfolio/build/robot_package/build/lib/robot_package/hello_world.py -> /home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages/robot_package
+byte-compiling /home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages/robot_package/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages/robot_package/hello_world.py to hello_world.cpython-310.pyc
+running install_data
+creating /home/davey/ros2-learning-portfolio/install/robot_package/share/ament_index
+creating /home/davey/ros2-learning-portfolio/install/robot_package/share/ament_index/resource_index
+creating /home/davey/ros2-learning-portfolio/install/robot_package/share/ament_index/resource_index/packages
+copying resource/robot_package -> /home/davey/ros2-learning-portfolio/install/robot_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package
+creating /home/davey/ros2-learning-portfolio/install/robot_package/share/robot_package/launch
+running install_egg_info
+Copying ../../build/robot_package/robot_package.egg-info to /home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages/robot_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing hello_world script to /home/davey/ros2-learning-portfolio/install/robot_package/lib/robot_package
+writing list of installed files to '/home/davey/ros2-learning-portfolio/build/robot_package/install.log'

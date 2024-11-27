@@ -1,0 +1,54 @@
+running egg_info
+creating ../../build/parameters_package/parameters_package.egg-info
+writing ../../build/parameters_package/parameters_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/parameters_package/parameters_package.egg-info/dependency_links.txt
+writing entry points to ../../build/parameters_package/parameters_package.egg-info/entry_points.txt
+writing requirements to ../../build/parameters_package/parameters_package.egg-info/requires.txt
+writing top-level names to ../../build/parameters_package/parameters_package.egg-info/top_level.txt
+writing manifest file '../../build/parameters_package/parameters_package.egg-info/SOURCES.txt'
+reading manifest file '../../build/parameters_package/parameters_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/parameters_package/parameters_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/davey/ros2-learning-portfolio/build/parameters_package/build
+creating /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib
+creating /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package
+copying parameters_package/__init__.py -> /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package
+copying parameters_package/hello_world.py -> /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package
+copying parameters_package/square_client.py -> /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package
+copying parameters_package/alternating_publisher.py -> /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package
+copying parameters_package/square_service.py -> /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package
+running install
+running install_lib
+creating /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package
+copying /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package/__init__.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package
+copying /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package/hello_world.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package
+copying /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package/square_client.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package
+copying /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package/alternating_publisher.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package
+copying /home/davey/ros2-learning-portfolio/build/parameters_package/build/lib/parameters_package/square_service.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package
+byte-compiling /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package/hello_world.py to hello_world.cpython-310.pyc
+byte-compiling /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package/square_client.py to square_client.cpython-310.pyc
+byte-compiling /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package/alternating_publisher.py to alternating_publisher.cpython-310.pyc
+byte-compiling /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package/square_service.py to square_service.cpython-310.pyc
+running install_data
+creating /home/davey/ros2-learning-portfolio/install/parameters_package/share/ament_index
+creating /home/davey/ros2-learning-portfolio/install/parameters_package/share/ament_index/resource_index
+creating /home/davey/ros2-learning-portfolio/install/parameters_package/share/ament_index/resource_index/packages
+copying resource/parameters_package -> /home/davey/ros2-learning-portfolio/install/parameters_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package
+creating /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/launch
+copying launch/hello_world_launch.py -> /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/launch
+creating /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/config
+copying config/params.yaml -> /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/config
+creating /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/srv
+copying srv/SquareOneInt.srv -> /home/davey/ros2-learning-portfolio/install/parameters_package/share/parameters_package/srv
+running install_egg_info
+Copying ../../build/parameters_package/parameters_package.egg-info to /home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages/parameters_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing alternating_publisher script to /home/davey/ros2-learning-portfolio/install/parameters_package/lib/parameters_package
+Installing hello_world script to /home/davey/ros2-learning-portfolio/install/parameters_package/lib/parameters_package
+Installing square_client script to /home/davey/ros2-learning-portfolio/install/parameters_package/lib/parameters_package
+Installing square_service script to /home/davey/ros2-learning-portfolio/install/parameters_package/lib/parameters_package
+writing list of installed files to '/home/davey/ros2-learning-portfolio/build/parameters_package/install.log'
