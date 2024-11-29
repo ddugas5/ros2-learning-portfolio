@@ -14,6 +14,15 @@
         <color rgba="1 1 1 1" />
     </material>
 
+    <!--base footprint-->    
+    </link name="base_footprint">
+
+    <joint name="base_joint" type="fixed">
+        <parent="base_link"/>
+        <child="base_footprint"/>
+        <origin="0 0.1" rpy="0 0 0"/>
+    </joint>
+
     <!--base link-->
     <link name="base_link">
         <visual>
@@ -48,7 +57,7 @@
             <geometry>
                 <cylinder radius="0.1" length="0.05"/>
             </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
             <material name="grey"/>
         </visual>
     </link>
@@ -56,9 +65,44 @@
     <joint name="left_wheel_link" type="continuous">
         <parent link="base_link" />
         <child link="left_wheel" />
-        <origin xyz="-0.15 0 0" rpy="0 0 0"/>
-        <axis xyz="1 0 0" />
+        <origin xyz="-0.15 0.225 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
     </joint>
 
     <!--right wheel-->
+    <link name="right_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <joint name="right_wheel_link" type="continuous">
+        <parent link="base_link" />
+        <child link="right_wheel" />
+        <origin xyz="-0.15 -0.225 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <!--caster wheel-->
+    <link name="caster_wheel">
+        <visual>
+            <geometry>
+                <sphere radius="0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <joint name="caster_wheel_link" type="fixed">
+        <parent link="base_link" />
+        <child link="caster_wheel" />
+        <origin xyz="0.2 0 -0.05" rpy="0 0 0"/>
+        <axis xyz="0 1 0" />
+    </joint>
+
 </robot>
