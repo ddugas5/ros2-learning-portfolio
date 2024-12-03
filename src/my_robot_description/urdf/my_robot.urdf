@@ -15,12 +15,12 @@
     </material>
 
     <!--base footprint-->    
-    </link name="base_footprint">
+    <link name="base_footprint"/>
 
     <joint name="base_joint" type="fixed">
-        <parent="base_link"/>
-        <child="base_footprint"/>
-        <origin="0 0.1" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="base_footprint"/>
+        <origin xyz="0 0.1 0" rpy="0 0 0"/>
     </joint>
 
     <!--base link-->

@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages",
+        "/home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages",
+        "/home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/davey/ros2-learning-portfolio/install/robot_package/lib/python3.10/site-packages",
+        "/home/davey/ros2-learning-portfolio/install/parameters_package/lib/python3.10/site-packages",
+        "/home/davey/ros2-learning-portfolio/install/basic_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
