@@ -10,7 +10,7 @@ This is a portfolio of my ROS2 projects as I learn
 * Configuring Parameters Dynamically  
 * Launch Files  
 * URDFs
-* Running Simualtions Using Gazebo
+* Visualize a three wheeled robot in RVIZ2
 
 ## Currently Working On  
 * Simulating a three wheeled robot in Gazebo
