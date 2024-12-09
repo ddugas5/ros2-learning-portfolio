@@ -1,5 +1,5 @@
 # ROS2 Learning Portfolio
-This is a portfolio of my ROS2 projects as I learn  
+This is a portfolio used to track my progress as I learn ROS2. The goal is to build on this to use as a reference for myself, and to share with others who are also interested in ROS and robotics.
   
 ## Topics Covered So Far..  
 * ROS2 Topics  
