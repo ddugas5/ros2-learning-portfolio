@@ -11,7 +11,7 @@ This is a portfolio of my ROS2 projects as I learn
 * Launch Files  
 * URDFs
 * Visualize a three wheeled robot in RVIZ2
-* Improve URDFs with Xacro
+* Improve URDFs with xacro
 
 ## Currently Working On  
 * Simulating a three wheeled robot in Gazebo
