@@ -25,6 +25,8 @@
             <origin xyz="0 0 0.1" rpy="0 0 0"/>
             <material name="green"/>
         </visual>
+        <xacro:box_inertia m="5.0" l="${base_length}" w="{base_width}" h="{base_height}"
+                            xyz="0 0 ${base_height}/2" rpy="0 0 0"/>
     </link>
 
     <!-- lidar -->
@@ -36,6 +38,8 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
             <material name="white"/>
         </visual>
+        <xacro:wheel_inertia m="1.0" r="${wheel_radius}" h="${wheel_length}"
+                            xyz="0 0 0" rpy="0 0 0"/> 
     </link>
 
     <joint name="base_lidar_joint" type="fixed">
@@ -44,7 +48,7 @@
         <origin xyz="0 0 0.225" rpy="0 0 0"/>
     </joint>
 
-    <!--right wheel xacro macro-->
+    <!--wheel xacro macro-->
     <xacro:macro name="wheel" params="prefix">
         <link name="${prefix}_wheel">
             <visual>
@@ -53,7 +57,9 @@
                 </geometry>
                 <origin xyz="0 0 0" rpy="1.57 0 0"/>
                 <material name="grey"/>
-            </visual>            
+            </visual>
+            <xacro:wheel_inertia m="1.0" r="${wheel_radius}" h="${wheel_length}"
+                                xyz="0 0 0" rpy="1.57 0 0"/>            
         </link>
     </xacro:macro>
 
@@ -87,6 +93,8 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="grey"/>
         </visual>
+        <xacro:caster_wheel_inertia m="0.5" r="${wheel_radius/2}"
+                                    xyz="0 0 0" rpy="0 0 0"/>
     </link>
 
     <joint name="caster_wheel_link" type="fixed">
