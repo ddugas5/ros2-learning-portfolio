@@ -31,7 +31,7 @@
             </geometry>
             <origin xyz="0 0 0.1" rpy="0 0 0"/>        
         </collision>
-        <xacro:box_inertia m="5.0" l="${base_length}" w="${base_width}" h="${base_height}"
+        <xacro:box_inertia m="5.0" l="${2*base_length}" w="${2*base_width}" h="${2*base_height}"
                             xyz="0 0 0.1" rpy="0 0 0"/>
     </link>
 
@@ -70,7 +70,7 @@
                 </geometry>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
             </collision>
-            <xacro:wheel_inertia m="1.0" r="${wheel_radius}" h="${wheel_length}"
+            <xacro:wheel_inertia m="1.0" r="${2*wheel_radius}" h="${2*wheel_length}"
                                 xyz="0 0 0" rpy="1.57 0 0"/>            
         </link>
     </xacro:macro>
@@ -111,7 +111,7 @@
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </collision>
-        <xacro:caster_wheel_inertia m="0.5" r="${wheel_radius/2.0}"
+        <xacro:caster_wheel_inertia m="0.5" r="${2*wheel_radius/2.0}"
                                     xyz="0 0 0" rpy="0 0 0"/>
     </link>
 
