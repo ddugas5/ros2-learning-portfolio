@@ -26,8 +26,8 @@
             <update_rate>50</update_rate>
 
             <!-- wheels -->
-            <left_joint>left_wheel_link</left_joint>
-            <right_joint>right_wheel_link</right_joint>
+            <left_joint>base_left_wheel_joint</left_joint>
+            <right_joint>base_right_wheel_joint</right_joint>
 
             <!-- kinematics -->
             <wheel_separation>0.45</wheel_separation>
