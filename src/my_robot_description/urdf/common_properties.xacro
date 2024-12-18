@@ -14,6 +14,14 @@
         <color rgba="1 1 1 1" />
     </material>
 
+    <material name="orange">
+        <color rgba="1 0.647 0 1"/>
+    </material>
+
+    <material name="yellow">
+        <color rgba="1 1 0 1"/>
+    </material>
+
     <xacro:macro name="box_inertia" params="m l w h xyz rpy">
         <inertial>
             <origin xyz="${xyz}" rpy="${rpy}"/>

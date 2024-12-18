@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <!--add variables-->
+
+
+    <!--base footprint-->
+    <link name="base_footprint"/>
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="arm_base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/> <!--fill in xyz-->
+    </joint>
+
+    <!--base link add collision and inertia-->
+    <link name="arm_base_link">
+        <visual>
+            <geometry>
+                <box size="0 0 0"/> <!--todo: add dimensions-->
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/> <!--todo: xyz-->
+            <material name="orange"/>
+        </visual>
+    </link>
+
+    <!--forearm link add collision and inertia-->
+    <link name="forearm_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0" length="0"/><!--todo: add dimensions-->
+                <origin xyz="0 0 0" rpy="0 0 0"/> <!--add xyz-->
+                <material name="yellow"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <!--hand link-->
+    <link name="hand_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0" length="0"/> <!--todo: add dimensions-->
+                <origin xyz="0 0 0" rpy="0 0 0"/> <!--add xyz-->
+                <material name="orange"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <!--forearm joint-->
+    <joint name="forearm_joint" type="revolute">
+        <parent link="base_link"/>
+        <child link="forearm_link"/>
+        <origin xyz="0 0 0"/>
+        <axis xyz="0 0 0"/>
+        <limit lower="" upper="" effort="" velocity=""/> <!-- fill in from here up-->
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+    <!--hand joint-->
+    <joint name="hand_joint" type="revolute">
+        <parent link="forearm_link"/>
+        <child link="hand_link"/>
+        <origin xyz="0 0 0"/>
+        <axis xyz="0 0 0"/>
+        <limit lower="" upper="" effort="" velocity=""/> <!-- fill in from here up-->
+        <dynamics friction="0.05" damping="0.1"/>
+    </joint>
+
+</robot>
