@@ -10,15 +10,18 @@ This is a portfolio used to track my progress as I learn ROS2. The goal is to bu
 * Configuring Parameters Dynamically  
 * Launch Files  
 * URDFs
-* Visualize a three wheeled robot in RVIZ2
+* Visualize a three wheeled robot in RViz2
 * Improve URDFs with xacro
+* Simulated a three wheeled robot in Gazebo
+* Used a differential drive plugin to move the robot
+* Added a camera to the robot in Gazebo
+* Visualize a 2 DOF Arm in RViz2
 
 ## Currently Working On  
-* Simulating a three wheeled robot in Gazebo
+* Simulating a 2 DOF Arm in Gazebo
   
 ## Future Ideas  
-* Add Camera and LiDAR to Three Wheeled Robot
-* Explore SLAM, Computer Vision, and Navigation
-* 3 DOF Robot Arm
+* Explore SLAM and Navigation
+* Explore MoveIt
 * 6 DOF Robot Arm
-* More to come!
+* And more!
