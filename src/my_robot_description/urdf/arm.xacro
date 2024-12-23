@@ -11,7 +11,7 @@
     <xacro:property name="hand_radius" value="0.02" />
     <xacro:property name="hand_length" value="0.3" />
 
-    <!--base link add collision and inertia-->
+    <!--base link add inertia-->
     <link name="arm_base_link">
         <visual>
             <geometry>
@@ -20,9 +20,17 @@
             <origin xyz="0 0 ${arm_base_height / 2.0}" rpy="0 0 0"/>
             <material name="orange"/>
         </visual>
+        <collision>
+            <geometry>
+                <box size="${arm_base_length} ${arm_base_width} ${arm_base_height}"/>                
+            </geometry>
+            <origin xyz="0 0 ${arm_base_height / 2.0}" rpy="0 0 0"/>
+        </collision>
+        <xacro:box_inertia m="0.5" l="${2*arm_base_length}" w="${2*arm_base_width}" h="${2*arm_base_height}"
+                            xyz="0 0 ${arm_base_height / 2.0}" rpy="0 0 0"/>
     </link>
 
-    <!--forearm link add collision and inertia-->
+    <!--forearm link add inertia-->
     <link name="forearm_link">
         <visual>
             <geometry>
@@ -31,9 +39,17 @@
             <origin xyz="0 0 ${forearm_length/2.0}" rpy="0 0 0"/>
             <material name="yellow"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${forearm_radius}" length="${forearm_length}"/>
+            </geometry>
+            <origin xyz="0 0 ${forearm_length/2.0}" rpy="0 0 0"/>
+        </collision>
+        <xacro:wheel_inertia m="0.3" r="${2*forearm_radius}" h="${2*forearm_length}"
+                                xyz="0 0 ${forearm_length/2.0}" rpy="0 0 0"/>  
     </link>
 
-    <!--hand link-->
+    <!--hand link add inertia-->
     <link name="hand_link">
         <visual>
             <geometry>
@@ -42,6 +58,14 @@
             <origin xyz="0 0 ${hand_length/2.0}" rpy="0 0 0"/>
             <material name="orange"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${hand_radius}" length="${hand_length}"/>
+            </geometry>
+            <origin xyz="0 0 ${hand_length/2.0}" rpy="0 0 0"/>
+        </collision>
+        <xacro:wheel_inertia m="0.3" r="${2*hand_radius}" h="${2*hand_length}"
+                                xyz="0 0 ${hand_length/2.0}" rpy="0 0 0"/>
     </link>
 
     <!--forearm joint-->
@@ -51,6 +75,7 @@
         <origin xyz="0 0 ${arm_base_height}" rpy="0 0 0"/>
         <axis xyz="0 1 0"/>
         <limit lower="0" upper="${pi/2}" effort="100" velocity="100"/>
+        <dynamics friction="0.05" damping="0.1"/>
     </joint>
 
     <!--hand joint-->
@@ -60,6 +85,7 @@
         <origin xyz="0 0 ${forearm_length}" rpy="0 0 0"/>
         <axis xyz="0 1 0"/>
         <limit lower="0" upper="${pi/2}" effort="100" velocity="100"/>
+        <dynamics friction="0.05" damping="0.1"/>
     </joint>
 
 </robot>
