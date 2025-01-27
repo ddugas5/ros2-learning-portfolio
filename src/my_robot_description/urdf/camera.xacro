@@ -15,7 +15,7 @@
         </visual>
         <collision>
             <geometry>
-                <box size="${camera_length} ${camera_width} {camera_height}"/>
+                <box size="${camera_length} ${camera_width} ${camera_height}"/>
             </geometry>
         </collision>
         <xacro:box_inertia m="0.1" l="${camera_length}" w="${camera_width}" h="${camera_height}"

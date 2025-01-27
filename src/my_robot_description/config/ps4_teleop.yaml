@@ -1,0 +1,7 @@
+teleop_twist_joy:
+  ros__parameters:
+    axis_linear_x: 1         # Left stick vertical axis for forward/backward
+    axis_angular_y: 0        # Left stick horizontal axis for rotation
+    scale_linear: 0.5      # Scaling factor for linear speed
+    scale_angular: 0.5     # Scaling factor for angular speed
+    enable_button: 5       # Front right bumper to enable teleop
