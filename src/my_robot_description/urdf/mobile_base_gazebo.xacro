@@ -20,6 +20,10 @@
     </gazebo>
 
     <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so"/>
+    </gazebo>
+
+    <gazebo>
         <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
 
             <!-- Update rate in Hz -->

@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'velocity_control = control_package.velocity_control:main'
+            'velocity_control = control_package.velocity_control:main',
+            'make_a_circle = control_package.make_a_circle:main'
         ],
     },
 )
