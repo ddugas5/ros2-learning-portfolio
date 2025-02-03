@@ -101,4 +101,37 @@
         <child link="caster_wheel_link" />
         <origin xyz="${base_length/3.0} 0 ${-wheel_radius / 2.0}" rpy="0 0 0"/>
     </joint>
+
+    <!--LiDAR-->
+    <link name="lidar_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+    <sensor name="lidar_sensor" type="ray">
+        <origin xyz="0 0 0"/>
+        <ray>
+            <scan>
+                <horizontal>
+                    <samples>360</samples>
+                    <resolution>1</resolution>
+                    <min_angle>-1.57</min_angle>
+                    <max_angle>1.57</max_angle>
+                </horizontal>
+            </scan>
+            <range>
+                <min>0.1</min>
+                <max>10.0</max>
+            </range>
+        </ray>
+    </sensor>
+    </link>
+
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar_link"/>
+        <origin xyz="0 0 0.225"/>
+    </joint>
 </robot>
