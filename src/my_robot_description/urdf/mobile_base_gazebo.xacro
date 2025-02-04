@@ -19,12 +19,37 @@
         <mu2 value="0.1" />
     </gazebo>
 
-   <!-- <gazebo>
-        <plugin name="simple_controller" filename="libgazebo_ros_basic_controller.so">
-            <joint name="base_right_wheel_joint"/>
-            <joint name="base_left_wheel_joint"/>
-        </plugin>
-    </gazebo>-->
+    <gazebo reference="lidar_link">
+        <sensor type="ray" name="lidar_sensor">
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>360</samples>
+                        <resolution>1</resolution>
+                        <min_angle>-1.57</min_angle>
+                        <max_angle>1.57</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.1</min>
+                    <max>10.0</max>
+                </range>
+            </ray>
+            <plugin name="gazebo_ros_laser" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <namespace>/</namespace>
+                    <remapping>scan:=/scan</remapping>
+                </ros>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+    <gazebo reference = "imu_sensor">
+        <sensor type="imu" name="imu_sensor">
+            <update_rate>50</update_rate>
+        </sensor>
+    </gazebo>
 
     <gazebo>
         <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
