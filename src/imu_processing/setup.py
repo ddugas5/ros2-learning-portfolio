@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'imu_reader = imu_processing.imu_reader:main'
+            'imu_reader = imu_processing.imu_reader:main',
+            'euler_angles = imu_processing.euler_angles:main'
         ],
     },
 )
