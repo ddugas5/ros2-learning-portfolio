@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'imu_reader = imu_processing.imu_reader:main',
-            'euler_angles = imu_processing.euler_angles:main'
+            'euler_angles = imu_processing.euler_angles:main',
+            'moving_average = imu_processing.moving_average:main'
         ],
     },
 )
